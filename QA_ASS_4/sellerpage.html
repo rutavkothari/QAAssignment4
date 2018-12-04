@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <title>QA</title>
+    <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Load Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Assignment 4</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sellerpage.html">Seller</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>New Seller</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+                    <form>
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <input type="text" name="name" id="firstName" minlength="2" placeholder="First Name"
+                                        required />
+                                    <div id="firstNameMsg">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <input type="text" name="name" id="lastName" minlength="2" placeholder="Last Name"
+                                        required />
+                                    <div id="lastNameMsg">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" name="Address" id="Address" minlength="2" placeholder="Address" required />
+                            <div id="AddressMsg">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" name="City" id="City" minlength="2" placeholder="City" required />
+                            <div id="CityMsg">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input type="tel" pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" minlength="12" maxlength="15"
+                                name="PhoneNumber" id="phoneNumber" placeholder="Phone Number xxx-xxx-xxxx" onkeypress="ValidatePhone(this.value)" onblur="ValidatePhone(this.value)" required />
+                            <div id="PhoneNumberMsg">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input type="email" name="email" minlength="2" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+                                id="email" placeholder="Email" onkeypress="ValidateEmail(this.value)" onblur="ValidateEmail(this.value)" required />
+                            <div id="EmailMsg">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" name="VehicalMake" minlength="2" id="vehicalMake" placeholder="Vehical Make"
+                                required />
+                            <div id="VehicalMakeMsg">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <input type="text" name="Model" minlength="2" id="model" placeholder="Model"
+                                        required />
+                                    <div id="ModelMsg">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <input type="text" name="Year" minlength="2" id="year" placeholder="Year" required />
+                                    <div id="YearMsg">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <input id="submitButton" class="button" type="submit" value="Submit" onclick="Validation();"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="credit"></p>
+    <!-- Loaded JQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- Loaded Chart JS for Chart -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script> -->
+    <!-- Loaded Notify JS for Alert -->
+    <!-- <script type="text/javascript" src="js/javascript.js"></script> -->
+    <!-- Loaded Bootstrap JS for -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+    <!-- Load Application Javascript -->
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
